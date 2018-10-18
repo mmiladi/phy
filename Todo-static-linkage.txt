@@ -1,0 +1,2 @@
+* validate config path works in relative mode as well like before.
+* add the manual copy step of phy/src/test/data/EvoFoldConfig/ to include/ installation directory
