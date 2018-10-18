@@ -107,7 +107,10 @@ namespace phy {
     if (v.size() <= 1)
       return "";
     else {
-      string pathPrefix = "./";
+      string pathPrefix = "./"; 
+      if(filePath.compare(1,1,"/")) //Milad: This fix ( remove "./")allows passing non-relative pathes as config directory
+        pathPrefix = "/"; 
+      
       for (unsigned i = 0; i < v.size() - 1; i++) {
 	pathPrefix += v[i] + "/";
       }
