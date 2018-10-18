@@ -2,7 +2,7 @@
 
 bin_PROGRAMS = EvoFoldV2 grammarTrain dfgEval dfgTrain multinomial
 
-LDADD = $(top_srcdir)/phy/libphy.la -lboost_program_options -llapack -lntl -lopt -lnewmat -lm
+LDADD = $(top_srcdir)/phy/libphy.la -lboost_program_options -llapack -lblas -lntl -lopt -lnewmat -lm -lgfortran -lpthread
 
 EvoFoldV2_SOURCES    = EvoFold.cpp
 grammarTrain_SOURCES = grammarTrain.cpp
