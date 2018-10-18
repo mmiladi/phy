@@ -11,4 +11,4 @@ dfgTrain_SOURCES     = dfgTrain.cpp
 multinomial_SOURCES  = multinomial.cpp
 
 #  compiler options
-AM_CPPFLAGS = -I$(top_srcdir) --static
+AM_CPPFLAGS = -I$(top_srcdir) 
